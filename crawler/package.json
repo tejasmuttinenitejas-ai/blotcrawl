@@ -1,0 +1,16 @@
+{
+  "name": "blot-crawler",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "seed": "node seed.js",
+    "crawl": "node crawler.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.4",
+    "axios": "^1.7.7",
+    "cheerio": "^1.0.0",
+    "robots-parser": "^3.0.1"
+  }
+}
