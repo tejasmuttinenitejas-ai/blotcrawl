@@ -1,5 +1,5 @@
 // Blot Search API — a Google-Custom-Search-style endpoint:
-//   GET /functions/v1/search-api?q=your+query&key=blot_78f66471737a3e87e5a2c57c9b61d36f30c9
+//   GET /functions/v1/search-api?q=your+query&key=blot_33a85b8bfa6a06d80c7d6b3d2a0cb71ed16c
 //
 // Deploy this via the Supabase Dashboard (Edge Functions → Deploy a new
 // function → Via Editor) — no CLI or terminal needed.
