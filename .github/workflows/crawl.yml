@@ -1,0 +1,28 @@
+name: Blot crawl
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # every 6 hours — adjust as you like
+  workflow_dispatch: {}       # lets you trigger a run manually from the Actions tab
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        working-directory: crawler
+        run: npm install
+
+      - name: Run crawler
+        working-directory: crawler
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: npm run crawl
+cra
