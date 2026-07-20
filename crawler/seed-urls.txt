@@ -1,0 +1,9 @@
+# One URL per line. Lines starting with # are ignored.
+# Replace these with sites relevant to whatever your search engine
+# should focus on — the crawler follows links from here outward,
+# so pick seeds that link to the kind of content you want indexed.
+https://en.wikipedia.org/wiki/Main_Page
+https://news.ycombinator.com/
+https://www.bbc.com/news
+https://www.theverge.com/
+https://developer.mozilla.org/en-US/
